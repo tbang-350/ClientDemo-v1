@@ -1,0 +1,49 @@
+.travel-quote {
+  margin: 0 !important;
+  width: 20.375rem;
+  position: absolute;
+  top: 18.375rem;
+  left: calc(50% - 163px);
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.navbar-parent,
+.travel-quote-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.travel-quote-wrapper {
+  height: 28.125rem;
+  flex-direction: row;
+  padding: var(--padding-275xl) 0 var(--padding-74xl);
+  position: relative;
+  background-image: url(/public/backgroundimage@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.navbar-parent {
+  flex-direction: column;
+  padding: 0 0 var(--padding-11xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-26xl);
+  color: var(--color-white);
+  font-family: var(--font-chesna-grotesk-black);
+}
+@media screen and (max-width: 900px) {
+  .travel-quote {
+    font-size: var(--font-size-17xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .travel-quote {
+    font-size: var(--font-size-8xl);
+  }
+}
